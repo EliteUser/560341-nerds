@@ -249,11 +249,11 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding: 0;
+  height: 100%;
   list-style: none;
 }
 
 .slide {
-  position: absolute;
   z-index: -1;
   width: 100%;
   padding: 73px 20px 80px;
@@ -278,16 +278,21 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-1 {
+  position: relative;
   background: #eeeeee url("../img/slide1.png") no-repeat;
   background-position: 451px bottom;
 }
 
 .slide-2 {
+  position: absolute;
+  top: 0;
   background: #eeeeee url("../img/slide2.png") no-repeat;
   background-position: 516px bottom;
 }
 
 .slide-3 {
+  position: absolute;
+  top: 0;
   background: #eeeeee url("../img/slide3.png") no-repeat;
   background-position: 421px bottom;
 }
@@ -584,6 +589,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-preferred-size: 260px;
   flex-basis: 260px;
   padding-top: 55px;
+  margin-bottom: 50px;
 }
 
 .fieldset-box fieldset {
@@ -697,6 +703,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1165,6 +1172,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   width: 1440px;
   height: 416px;
+  background-color: #eeeeee;
 }
 
 .map-box iframe {
