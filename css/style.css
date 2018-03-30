@@ -1188,7 +1188,7 @@ input[type="radio"].visually-hidden {
     overflow-x: hidden;
   }
   
-  @supports (calc(calc(1200px - 100vw) / 2)) {
+  @supports (left: calc(calc(1200px - 100vw) / 2)) {
     .map-box {
       left: calc(calc(1200px - 100vw) / 2);
       width: 100vw;
