@@ -1187,9 +1187,12 @@ input[type="radio"].visually-hidden {
   .page-footer {
     overflow-x: hidden;
   }
-  .map-box {
-    left: calc(calc(1200px - 100vw) / 2);
-    width: 100vw;
+  
+  @supports (calc(calc(1200px - 100vw) / 2)) {
+    .map-box {
+      left: calc(calc(1200px - 100vw) / 2);
+      width: 100vw;
+    }
   }
   .map-box iframe {
     width: 100%;
